@@ -5,6 +5,7 @@ import React from "react";
 import Coin from "./components/coinItem/Coin";
 
 
+
 function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
@@ -22,7 +23,8 @@ function App() {
       .catch((error) => console.error(error));
   }, []);
 
-  
+
+
 
   const handleChange = (e) => {
     
@@ -31,6 +33,12 @@ function App() {
 
   };
 
+  const cancelCourse = () => { 
+    document.getElementById("crypto-search-form").reset();
+    setSearch("");
+  
+  }
+
   const filteredCoins = coins.filter((coin) =>
     coin.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -38,19 +46,21 @@ function App() {
   return (
     <div>
       <div className="header">
-        <div className="logoContainer">
+     
+        <div className="logoContainer" onClick={cancelCourse}>
         <img className="mainLogo" src="./logo.png" alt="logo" />
         <h1 className="brand">
-          cryptolv
+          crypto<i>lv</i>
         </h1>
         </div>
-        <form>
+        <form id="crypto-search-form" action="javascript:void(0);">
         <div className="search-box-container">
         <input placeholder='Meklēt valūtu...' className='js-search' onChange={handleChange} type="text"/>
         <i className="fa fa-search"></i>
       </div>
         </form>
       </div>
+
             <div className="coinsContainer">
       {filteredCoins.map((coin) => {
           return (
