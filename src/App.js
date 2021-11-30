@@ -17,7 +17,7 @@ function App() {
       )
       .then((res) => {
         setCoins(res.data);
-        console.log(res.data);
+        
       })
       .catch((error) => console.error(error));
   }, []);
@@ -47,7 +47,7 @@ function App() {
         <form>
         <div class="search-box">
           <button class="btn-search"><i class="fas fa-search"></i></button>
-          <input type="text" onChange={handleChange} class="input-search" placeholder="Meklēt valūtuu..."/>
+          <input type="text" onChange={handleChange} class="input-search" placeholder="Meklēt valūtug..."/>
         </div>
         </form>
       </div>
