@@ -10,7 +10,7 @@ const Coin = ({name, price, symbol, marketcap, volume, image, priceChange}) => {
         }, []);
             
     return (
-        <div data-aos="fade-in" className="cryptoCoin">
+        <div data-aos="" className="cryptoCoin">
             <img src={image} alt={`${name}`} className="coinLogo"/>
             <div className="coinNameWrap">
                 <h1 className="coinName">{name}</h1>
