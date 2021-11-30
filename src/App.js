@@ -45,10 +45,10 @@ function App() {
         </h1>
         </div>
         <form>
-        <div class="search-box">
-          <button class="btn-search"><i class="fas fa-search"></i></button>
-          <input type="text" onChange={handleChange} class="input-search" placeholder="Meklēt valūtug..."/>
-        </div>
+        <div className="search-box-container">
+        <input placeholder='Meklēt valūtu...' className='js-search' onChange={handleChange} type="text"/>
+        <i className="fa fa-search"></i>
+      </div>
         </form>
       </div>
             <div className="coinsContainer">
