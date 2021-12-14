@@ -19,7 +19,7 @@ function App() {
       .then((res) => {
         setCoins(res.data);
         console.log(res.data);
-      console.log(filteredCoins);
+      
         
       })
       .catch((error) => console.error(error));
@@ -66,6 +66,7 @@ function App() {
             <div className="coinsContainer">
       {filteredCoins.map((coin) => {
           return (
+            console.log(filteredCoins);
             <Coin
               key={coin.id}
               name={coin.name}
