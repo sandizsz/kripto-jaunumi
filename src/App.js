@@ -46,7 +46,7 @@ function App() {
     
  
   
-  console.log(coin);
+  console.log(coins);
 
   return (
     <div>
