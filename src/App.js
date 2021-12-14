@@ -66,7 +66,7 @@ function App() {
             <div className="coinsContainer">
       {filteredCoins.map((coin) => {
           return (
-            console.log(filteredCoins);
+            console.log(filteredCoins),
             <Coin
               key={coin.id}
               name={coin.name}
