@@ -18,6 +18,7 @@ function App() {
       )
       .then((res) => {
         setCoins(res.data);
+        console.log(res.data);
         
       })
       .catch((error) => console.error(error));
