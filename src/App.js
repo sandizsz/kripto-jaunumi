@@ -40,9 +40,7 @@ function App() {
   
   }
 
-  const filteredCoins = coins.filter((coin) =>
-    coin.name.toLowerCase().includes(search.toLowerCase())
-  );
+
 
   return (
     <div>
@@ -63,8 +61,7 @@ function App() {
       </div>
 
             <div className="coinsContainer">
-      {filteredCoins.map((coin) => {
-          return (
+   
             <Coin
               key={coin.id}
               name={coin.name}
@@ -75,8 +72,7 @@ function App() {
               image={coin.image}
               priceChange={coin.price_change_percentage_24h}
             />
-          );
-        })}
+        
             </div>
     </div>
   );
