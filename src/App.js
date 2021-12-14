@@ -63,14 +63,14 @@ function App() {
             <div className="coinsContainer">
    
             <Coin
-              key={coin.id}
-              name={coin.name}
-              price={coin.current_price}
-              symbol={coin.symbol}
-              marketcap={coin.market_cap}
-              volume={coin.total_volume}
-              image={coin.image}
-              priceChange={coin.price_change_percentage_24h}
+              key={coins.id}
+              name={coins.name}
+              price={coins.current_price}
+              symbol={coins.symbol}
+              marketcap={coins.market_cap}
+              volume={coins.total_volume}
+              image={coins.image}
+              priceChange={coins.price_change_percentage_24h}
             />
         
             </div>
