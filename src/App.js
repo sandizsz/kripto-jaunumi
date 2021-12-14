@@ -46,7 +46,7 @@ function App() {
     
  
   
-  console.log(filteredCoins);
+  console.log(coin);
 
   return (
     <div>
