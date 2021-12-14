@@ -42,9 +42,9 @@ function App() {
   }
 
   const filteredCoins = coins.filter((coin) =>
-    coin.name.toLowerCase())
+    coin.name.toLowerCase());
     
-  );
+ 
   
   console.log(filteredCoins);
 
