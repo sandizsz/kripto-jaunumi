@@ -19,6 +19,7 @@ function App() {
       .then((res) => {
         setCoins(res.data);
         console.log(res.data);
+      console.log(filteredCoins);
         
       })
       .catch((error) => console.error(error));
